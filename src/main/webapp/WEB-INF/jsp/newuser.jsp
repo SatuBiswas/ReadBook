@@ -9,12 +9,34 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">        
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <style>
+            label{
+                margin: 0px;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8" style="background: gray">.col-12 .col-md-8</div>
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <h1>Login</h1>
+                    <form class="form-inline" action="">
+                        <div class="form-group">                            
+                            <input type="email" class="form-control" id="loginemail" placeholder="email">
+                        </div>
+                        <div class="form-group">                            
+                            <input type="password" class="form-control" id="loginpwd" placeholder="password">
+                        </div>                        
+                        <button type="submit" class="btn btn-primary">login</button>
+                    </form> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8" style="">.col-12 .col-md-8</div>
                 <div class="col-6 col-md-4">
+                    <a href="" style="font-style: italic">forget password ?</a>
+                    <h1>Create Account</h1>
                     <form action="">
                         <div class="form-group">
                             <label for="">Full Name</label>
@@ -44,7 +66,7 @@
                             <input type="radio" name="sex" value="male" style=""> Male
                             <input type="radio" name="sex" value="female" style="margin-left: 20px"> Female
                         </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
